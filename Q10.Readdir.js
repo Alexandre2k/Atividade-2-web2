@@ -12,9 +12,9 @@ function readdirPromise(caminho) {
   });
 }
 
-readdirPromise("/caminho/do/diretorio")
+readdirPromise("/caminho/diretorio")
   .then((arquivos) => {
-    console.log(`Arquivos e subdiretorios em /caminho/do/diretorio:`);
+    console.log(`Arquivos e subdiretorios em /caminho/diretorio:`);
     arquivos.forEach((arquivo) => {
       console.log(arquivo);
     });
